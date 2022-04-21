@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO DE REGISTRO</h1>
+    </header>
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <label>NOMBRE:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" maxlength="20" size="20" required placeholder="Nombre">
+                </div>    
+            </div>         
+            <label>CIUDAD</label>
+            <select  name="ciudad">
+                <option value="lp">LA PAZ</option>
+                <option value="ch">COCHABAMBA</option>
+                <option value="st">SANTA CRUZ</option>
+                <option value="pt">POTOSI</option>
+            </select>
+            <br><br>
+            <label>PESO:</label>
+            <input type="text" maxlength="30" size="30" required >
+            <br><br>
+            <label>EDAD:</label>
+            <select>
+                <option value="15-30">15-30 años</option>
+                <option value="30-50">30-50 años</option>
+                <option value="más-50">más de 50 años</option>
+            </select>
+            <br><br>
+            <label>SEXO:</label>
+            <select>
+                <option value="masc">Masculino</option>
+                <option value="fem">Femenino</option>
+            </select>
+            <br><br>
+            <input type="submit" value="enviar">
+            <input type="reset" value ="limpiar">
+        </div>
+    </form>
+    
+</body>
+</html>

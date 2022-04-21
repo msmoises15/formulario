@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Pacifico&display=swap');
+
+body{
+  font-family: 'Beau Rivage', cursive;
+font-family: 'Pacifico', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgb(19, 10, 10);
+  border-radius: 4px;
+  resize: vertical;
+  background-color: rgb(229, 240, 180);
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: "Indie Flower", cursive;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #fc4f0b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #f07706;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #e7d9be;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
